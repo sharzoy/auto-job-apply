@@ -1,0 +1,33 @@
+{
+  "company": "示例科技",
+  "role": "AI产品经理",
+  "hard_requirements": [
+    {"name": "学历", "jd": "硕士及以上", "you": "硕士", "pass": true},
+    {"name": "年限", "jd": "1-3年", "you": "约3年", "pass": true}
+  ],
+  "hard_fail_count": 0,
+  "dimensions": {
+    "role_domain": 23,
+    "skills": 22,
+    "years": 15,
+    "education": 10,
+    "location": 10,
+    "salary": 8,
+    "prefs": 5
+  },
+  "penalties": [],
+  "raw_sum": 93,
+  "score_before_cap": 93,
+  "score": 95,
+  "grade": "A",
+  "stars": "★★★★★",
+  "decision": "建议立即投递",
+  "recommend_reasons": [
+     "具备AI工具实践经验",
+    "有独立制作AI应用和产品项目经历",
+    "具备用户需求分析和运营数据经验"
+  ],
+  "risks": [ "缺少完整商业产品经验",
+    "没有明确PRD和研发协作经历"],
+  "reject_reasons": []
+}

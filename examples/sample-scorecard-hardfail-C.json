@@ -1,0 +1,34 @@
+{
+  "company": "某出海公司",
+  "role": "海外运营",
+  "hard_requirements": [
+    {"name": "学历", "jd": "硕士", "you": "专科", "pass": false},
+    {"name": "英语", "jd": "英语六级/商务沟通", "you": "英语弱、无英文项目", "pass": false},
+    {"name": "年限", "jd": "3年以上", "you": "约2年", "pass": false}
+  ],
+  "hard_fail_count": 3,
+  "dimensions": {
+    "role_domain": 18,
+    "skills": 22,
+    "years": 6,
+    "education": 3,
+    "location": 10,
+    "salary": 5,
+    "prefs": 3
+  },
+  "penalties": [],
+  "raw_sum": 67,
+  "score_before_cap": 67,
+  "score": 42,
+  "grade": "C",
+  "stars": "★★☆☆☆",
+  "decision": "🚫 不建议投递",
+  "recommend_reasons": [],
+  "risks": [],
+  "reject_reasons": [
+    "要求：硕士 + 英语六级 + 3年以上",
+    "你的经历：专科、英语弱、约2年、无英文项目",
+    "技能表面匹配度：约90%（不能抵消硬性门槛）",
+    "硬性未过3项 → 封顶后综合约42% → C级"
+  ]
+}

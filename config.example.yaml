@@ -1,0 +1,55 @@
+# Copy to config.yaml and edit. Never commit real secrets.
+
+scoring:
+  weights:
+    role_domain: 25
+    skills: 25
+    years: 15
+    education: 10
+    location: 10
+    salary: 10
+    prefs: 5
+
+  penalties:
+    salary_no_overlap: -15
+    education_gap_large: -10
+
+  # A/B/C grade bands (final score AFTER hard-requirement caps)
+  grades:
+    A_min: 90          # 90–100 强匹配，优先投
+    B_min: 60          # 60–89 有机会；其中 60–80 更需包装简历表述
+    # < B_min → C 不推荐
+
+  # Hard-requirement anti-misjudgment caps
+  hard_requirement_caps:
+    one_fail_max_score: 79    # cannot be A
+    two_fail_max_score: 59    # force C
+
+  thresholds:
+    write_packet_min: 0       # 默认都写 packet（含 C），便于看🚫原因
+    skip_below: 0             # 仅当用户说跳过才不写
+    # 一键投递默认只投 A+B；C 需强制
+    batch_include_grades: ["A", "B"]
+
+safety:
+  always_confirm_before_submit: true
+  max_apps_per_day: 10
+  max_submit_retries: 2
+
+platforms:
+  boss:
+    enabled: true
+  job51:
+    enabled: true
+  zhilian:
+    enabled: true
+  email:
+    enabled: true
+
+logging:
+  path: applications/log.md
+  jsonl_path: applications/log.jsonl
+
+packets:
+  # applications/packets/{A|B|C}/<date>-<company>-<role>.txt
+  sort_order: ["A", "B", "C"]

@@ -1,0 +1,44 @@
+# Secrets & personal data — never commit
+profile.md
+config.yaml
+*.cookie
+*.session
+.env
+.env.*
+
+# Local application history & scratch (never publish personal JD runs)
+applications/**
+!applications/.gitkeep
+!applications/log.example.md
+!applications/packets/
+!applications/packets/.gitkeep
+!applications/packets/A/
+!applications/packets/A/.gitkeep
+!applications/packets/B/
+!applications/packets/B/.gitkeep
+!applications/packets/C/
+!applications/packets/C/.gitkeep
+!applications/jobs/
+!applications/jobs/.gitkeep
+applications/packets/**
+!applications/packets/.gitkeep
+!applications/packets/A/.gitkeep
+!applications/packets/B/.gitkeep
+!applications/packets/C/.gitkeep
+applications/jobs/**
+!applications/jobs/.gitkeep
+applications/log.md
+applications/log.jsonl
+applications/**/*.score.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
